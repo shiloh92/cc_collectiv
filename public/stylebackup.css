@@ -1,0 +1,212 @@
+#loginButton {
+  background:white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+}
+
+nav img {
+  margin-right: 20px;
+}
+
+nav button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  padding: 0;
+}
+
+nav button span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.nav button {
+  font-size: 1.2em;
+  margin: 0 10px;
+  padding: 10px;
+  background-color: #4a4a4a;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+.nav button:hover {
+  background-color: #222;
+}
+
+/* Player status */
+nav div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#status {
+  font-weight: bold;
+}
+
+/* Map section */
+.container-fluid {
+  padding: 20px;
+}
+
+.form-group {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.inventory-container {
+  height:400px;
+  overflow: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inventory-container h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.inventory-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inventory-container li {
+  margin: 5px;
+  padding: 5px;
+  background-color: #4a4a4a;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease;
+}
+
+.inventory-container li:hover {
+  background-color: #222;
+}
+
+#tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  font-size: 0.8em;
+  max-width: 150px;
+}
+
+/* Default style for inventory items */
+.inventory-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.zoneGxpBalances {
+	border: 1px solid white;
+	border-radius: 6px;
+	background: black;
+	color: cyan;
+	padding: 2px;
+	font-size: 10px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+/* Style for small screens */
+@media (max-width: 576px) {
+  .card{
+    margin-bottom:1em !important;
+  }
+  .inventory-item {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .inventory-item img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+  .inventory-item span {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  .inventory-item button {
+    font-size: 12px;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+@media (min-width: 577px) {
+  .inventory-item img {
+    max-width: 86px;
+    margin-right: 10px;
+  }
+  .inventory-item span {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  .inventory-item button {
+    font-size: 14px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* Animation for map pulse */
+/* @keyframes pulse-anim {
+0% {
+transform: scale(1);
+}
+50% {
+transform: scale(1.05);
+}
+100% {
+transform: scale(1);
+}
+} */

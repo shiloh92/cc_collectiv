@@ -1,0 +1,81 @@
+.navbar {
+background-color: #fffd3a;
+}
+
+.navbar-brand img {
+border-radius: 50%;
+}
+
+.inventory-container {
+  height: 200px;
+  overflow: auto;
+}
+
+
+.inventory-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3px;
+  background-color: #fffd3a;
+  color: #353535;
+  /* font-size: 1.2rem; */
+  font-weight: bold;
+  padding: 1rem;
+}
+.inventory-item:hover{
+  background: #fffd64;
+}
+
+.inventory-item img {
+  width:64px;
+  /* width: 100px; */
+  /* height: 100px; */
+  object-fit: cover;
+}
+
+.inventory-item .progress-bar .bar {
+  height: 20px;
+  width: 100%;
+  background-color: #007bff;
+  border-radius: 25px;
+  transition: width 0.2s ease-in-out;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.inventory-item .bar {
+  height: 20px;
+  width: 0;
+  background-color: #007bff;
+  border-radius: 25px;
+  transition: width 0.2s ease-in-out;
+}
+
+.selected-item {
+    background-color: #1abc9c;
+}
+.in-team{
+  background-color: #ffd700;
+}
+
+.zoneGxpBalances {
+	border: 1px solid white;
+	border-radius: 6px;
+	background: black;
+	color: cyan;
+	padding: 2px;
+	font-size: 10px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.modal {
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-dialog {
+  margin: 0;
+}

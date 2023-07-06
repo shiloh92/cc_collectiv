@@ -1,0 +1,1073 @@
+/* https://webcode.tools/generators/css/keyframe-animation */
+
+html, body {
+	/* font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif; */
+	font-family: 'Nunito', sans-serif;
+	width: 100%;
+	background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='40' height='40' patternTransform='scale(1) rotate(90)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(54, 0%, 100%, 1)'/><path d='M40 45a5 5 0 110-10 5 5 0 010 10zM0 45a5 5 0 110-10 5 5 0 010 10zM0 5A5 5 0 110-5 5 5 0 010 5zm40 0a5 5 0 110-10 5 5 0 010 10z'  stroke-width='1' stroke='none' fill='hsla(54, 100%, 90%, 1)'/><path d='M20 25a5 5 0 110-10 5 5 0 010 10z'  stroke-width='1' stroke='none' fill='hsla(54, 100%, 85%, 1)'/></pattern></defs><rect width='800%' height='800%' transform='translate(-52,-80)' fill='url(%23a)'/></svg>")
+}
+a {
+	text-decoration: none;
+}
+ul.playerCurrencies {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-around;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: .75em;
+	background: lightyellow;
+}
+li.playerCurrencies {
+	display: block;
+	flex: 0 1 auto;
+	/* Default */
+	list-style-type: none;
+	background: #fafafa;
+}
+.header {
+	background: #FFDD09;
+	border-bottom: 1px solid gainsboro;
+	flex: 0;
+	color: black;
+	text-align: center;
+}
+#location_header_text {
+	padding-top: 1.75em;
+	padding-bottom: 1.75em;
+}
+.flex_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 33%;
+}
+.column {
+	flex-direction: column;
+}
+.view {
+	height: 648px;
+	align-self: flex-start;
+	align-content: space-around;
+}
+#mapEditorDisplayText {
+	background: #ededed;
+	overflow-x: scroll;
+	width: 512px;
+	height: 80px;
+	padding: 12px;
+	border: 2px solid #cfcfcf;
+	border-radius: 3px;
+}
+#mapEditorHoverInfo {
+	background: #b4d7fb;
+	color: black;
+	width: 512px;
+	padding: 12px;
+	border: 2px solid #1e87f0;
+	border-radius: 3px;
+}
+.mapContainer {
+	width: 512px;
+	height: 512px;
+	background-color: #222;
+	animation-name: pulse-anim;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	-webkit-user-select: none;
+}
+.blue-column {
+	display: flex;
+	height: 648px;
+	border: 1px solid gainsboro;
+	align-self: flex-start;
+	width: 32%;
+}
+.green-column {
+	display: flex;
+	border: 1px solid gainsboro;
+	align-self: flex-start;
+	height: 648px;
+	width: 22%;
+}
+.overworldContainer {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 512px;
+	height: 512px;
+	background-repeat: repeat;
+	-webkit-user-select: none;
+}
+.overworldsquare {
+	width: 256px;
+	height: 256px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	font-size: 16px;
+	color: #0F9;
+	-webkit-transition: color 2s, font-size 2s;
+	-moz-transition: color 2s, font-size 2s;
+	-o-transition: color 2s, font-size 2s;
+	transition: color 2s, font-size 2s;
+	-webkit-user-select: none;
+}
+.ow_off {
+	background-image: url('images/Overworld_Icon_Off.png');
+}
+.ow_on {
+	font-size: 24px;
+	color: #fc0;
+	background-image: url('images/Overworld_Icon_On.png');
+}
+.overworldsquare:hover {
+	font-size: 24px;
+	color: #fc0;
+}
+.zoneGxpBalances {
+	border: 1px solid white;
+	border-radius: 6px;
+	background: black;
+	color: cyan;
+	padding: 2px;
+	font-size: 10px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.zoneContainer {
+	-webkit-user-select: none;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 512px;
+	height: 512px;
+	font-size: 14px;
+	/* font-size:.75em; */
+	background-image: url('images/Locked_Zone_Off.png');
+	background-repeat: repeat;
+	-webkit-user-select: none;
+}
+.zonesquare {
+	width: 128px;
+	height: 128px;
+	background: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	text-align: center;
+	background-image: url('images/Locked_Zone_Off.png');
+	background-repeat: repeat;
+	-webkit-transition: font-size 6s;
+	-moz-transition: font-size 6s;
+	-o-transition: font-size 6s;
+	transition: font-size 6s;
+	-webkit-user-select: none;
+}
+.zonesquare:hover {
+	background-image: url('images/Locked_Zone_On.png');
+	font-size: 16px;
+}
+.zoneactive {
+	font-weight: bold;
+	font-size: larger;
+}
+.zonerevealed {
+	width: 128px;
+	height: 128px;
+	background-image: url('images/DefaultUnlockedZoneTile.png');
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	text-align: center;
+	-webkit-user-select: none;
+}
+.unlocked_zone {
+	font-size: 16px;
+	color: white;
+	text-shadow: 1px 2px black;
+	background-repeat: repeat;
+	-webkit-user-select: none;
+}
+.uw_1 {
+	background-image: url('images/World1_UnlockedTile.png');
+}
+.uw_2 {
+	background-image: url('images/World2_UnlockedTile.png');
+}
+.uw_3 {
+	background-image: url('images/World3_UnlockedTile.png');
+}
+.uw_4 {
+	background-image: url('images/World4_UnlockedTile.png');
+}
+.navigation_box {
+	/* cursor for in-game map */
+	cursor: url('images/Cursor1.png'), url('images/Cursor1.png'), url('images/Cursor1.png'), auto;
+	padding: 0;
+	border-top: 1px solid gainsboro;
+	border-bottom: 1px solid gainsboro;
+	display: flex;
+}
+.arrow_up a, .arrow_down a {
+	width: 100%;
+	/* border: 1px solid blue; */
+}
+.arrow_left a, .arrow_right a {
+	padding-top: 255px !important;
+	padding-bottom: 230px !important;
+}
+.arrow_up {
+	align-self: flex-start;
+	text-align: center;
+	border-top: 1px solid gainsboro;
+	height: 25px;
+}
+.arrow_down {
+	align-self: flex-end;
+	text-align: center;
+	border-bottom: 1px solid gainsboro;
+	height: 25px;
+}
+.arrow_left {
+	/* padding-top:45% !important; */
+	padding: .2em;
+	width: 15px;
+}
+.arrow_right {
+	padding: .2em;
+	width: 15px;
+}
+.arrow_down:hover, .arrow_up:hover, .arrow_right:hover, .arrow_left:hover {
+	/* background:#DCDCDC;  */
+	background: #1E87F0;
+}
+.uk-icon>* {
+	color: rgb(50, 202, 202);
+}
+.uk-icon:hover>* {
+	color: white;
+}
+.inventory-menu-container {
+	/* display: flex; */
+}
+.world-menu-container {
+	display: flex;
+	justify-content: center;
+	/* padding-top: 1.59em; */
+	/* margin-bottom: -21px; */
+}
+.inventory_defaultmsg {
+	font-size: .75em;
+	padding: 1.5em;
+	border-top: none;
+}
+.adventure_location_box {
+	padding: 1.5em;
+	border-top: none;
+}
+.adventure_log_box {
+	padding: 1.5em;
+	overflow-y: scroll;
+	border-top: none;
+	height: 100%;
+}
+.adventure_log_box p {}
+.adventure_log_box h1 {
+	margin: 0;
+	font-size: .95em;
+	text-transform: capitalize;
+	flex-direction: row;
+}
+.tc_detail_container {
+	display: flex;
+	flex-direction: column;
+	/* padding: 3em; */
+	margin-bottom: 1.5em;
+	/* border: 1px solid gainsboro; */
+}
+/* TEAM CREATION MODAL STYLING */
+
+#selector_col1_header {
+	text-transform: uppercase;
+	column-gap: 0;
+}
+#selector_col2_header {
+	text-transform: uppercase;
+	column-gap: 0;
+}
+#tc_detail_row, #tc_detail_row2 {
+	/* border:1px solid gray; */
+}
+#tc_detail_row {
+	background: gainsboro;
+	padding: 1.25em;
+}
+#tc_detail_row2 {
+	/* background:#FFFFE0; */
+	padding: .25em;
+	border-bottom: 1px solid gainsboro;
+	border-left: 1px solid gainsboro;
+	border-right: 1px solid gainsboro;
+}
+#tc_terrain, #tc_vehicle {
+	padding: .25em;
+}
+#tc_vehicle {
+	font-weight: bold;
+}
+#tc_teammembers, #tc_vehiclecapacity {
+	padding: .25em;
+}
+#tc-creature-images {
+	display: flex;
+	width: 400px;
+	padding-left: 1em;
+	padding-bottom: 1em;
+}
+#tc-creatures-images img {
+	border: 2px solid gainsboro;
+	margin: 5px;
+}
+/* TEAM CREATION MODAL STYLING ENDS*/
+
+.center_notifications_box {
+	padding: 1.5em;
+}
+.center_notifications_box p {
+	font-size: .75em;
+}
+.center_notifications_box h1 {
+	margin: 0;
+	font-size: 1em;
+	text-transform: capitalize;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+#login-background-card {
+	margin: 2.5em;
+	padding: 8em;
+	justify-content: center;
+	text-align: center;
+}
+.uk-tab {
+	margin-left: 0px !important;
+	padding: 0 !important;
+	flex-wrap: initial !important;
+	align-content: center !important;
+	justify-content: center !important;
+	/* font-size:inherit !important; */
+}
+.uk-tab img {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.uk-tab a {
+	justify-content: space-evenly !important;
+	font-size: 1em !important;
+}
+.uk-tab li {
+	align-content: center !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+#vehicles_data {
+	display: flex;
+	padding: .3em;
+}
+#houses_data {
+	display: flex;
+	padding: .3em;
+}
+/* this controls creatures,vehicle, houses styling of inventory */
+
+.inventory_item_row {
+	text-transform: uppercase;
+	font-size: 12px;
+	border-bottom: 1px solid #F8F8F8 cursor: pointer;
+	display: flex;
+	padding: 1em;
+}
+.inventory_item_col1 {
+	padding-right: 1em;
+}
+.inventory_item_col2 {
+	display: flex;
+	flex-wrap: wrap;
+	width: 70%;
+	/* justify-content:space-between; */
+}
+.inventory_content_container {
+	/* background:gray; */
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	width: 100%;
+	/* padding-left:1em; */
+	/* align-self: start; */
+}
+.inventory_bars_container {
+	/* background:blue; */
+	display: flex;
+	width: 100%;
+}
+.inventory_buttons_container {
+	/* background:yellow; */
+	display: flex;
+	width: 100%;
+	margin-top: .1em;
+}
+/* row content status, type, team, capacity, rentable, owner, renter, price */
+
+.rc_asset {
+	padding: 0.12em;
+	font-style: italic;
+	font-size: .85em;
+}
+.rc_status {
+	padding: 0.12em;
+}
+.rc_cr_status {
+	padding: 0.12em;
+	background: #F9F4B8;
+}
+.rc_team_blue {
+	padding: 0.12em;
+	background: #1E87F0;
+	color: white;
+}
+.rc_team_default {
+	padding: 0.12em;
+	background: #e9e9e9;
+}
+.rc_location {
+	padding: 0.12em;
+	background: #e9e9e9;
+}
+.rc_capacity {
+	padding: 0.12em;
+	/* background:#72af8f;
+	color:white; */
+}
+.rc_terrain {
+	padding: 0.12em;
+	/* background:#6c8e7c;
+	color:white; */
+}
+.item_name {
+	width: 100%;
+	font-weight: bold;
+}
+.item_idtext {
+	background: 1px solid #E5E5E5;
+}
+.inventory_item_row:hover {
+	background: lightgrey;
+	color: black;
+}
+.inventory_box {
+	overflow-y: scroll;
+	border-top: none;
+	height: 100%;
+}
+.selector_inventory_box {
+	overflow-y: scroll;
+	border-top: none;
+	height: 200px;
+	border: 1px solid gainsboro;
+}
+#modal-selector-list {
+	display: flex;
+}
+#selector-large-modal-box {
+	width: 800px;
+}
+#selectorButtonField {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row-reverse;
+}
+.selector_col {
+	margin-left: 15%;
+	margin-right: 15%;
+	/* min-width:50%;  this was used previously with two drop down lists */
+	width: 100%;
+	/* background-color: red;   */
+}
+.selector_col2 {
+	margin-left: 15%;
+	margin-right: 15%;
+	min-width: 50%;
+	/* background-color: green;   */
+}
+.selector_headers {
+	display: flex;
+}
+.selector_item_row {
+	/* this controls creatures,vehicle, houses styling of inventory */
+	text-transform: uppercase;
+	font-size: .75em;
+	padding: 1em;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+.selector_item_row:hover {
+	background: lightgrey;
+	color: black;
+}
+#modal-selector-descr {
+	/* inline-size: 150px;  */
+	overflow-wrap: break-word;
+	border: 1px solid #DCDCDC;
+	padding: 10px;
+	font-size: 18px;
+}
+.inventory_box img, .selector_inventory_box img {
+	margin: 0;
+	width: 15%;
+}
+.current_selection {
+	color: white;
+	background: #1E87F0;
+	padding: 1em;
+	cursor: pointer;
+}
+/* .uk-badge{
+  font-size:initial  !important;
+  margin:1em !important;
+}  */
+
+#map-unlock-area-name {
+	color: blue;
+	background: rgb(193, 220, 255);
+	padding: 1.25em;
+}
+#map-unlock-gxp-contributed {
+	color: green;
+	background: #6DE73C;
+	padding: 1.25em;
+}
+#map-unlock-gxp-required {
+	background: rgb(255, 140, 9);
+	color: white;
+	padding: 1.25em;
+}
+#map-unlock-gxp-balance {
+	background: gainsboro;
+	padding: 1.25em;
+}
+/* #gxpBalance{
+  background:#14A02E;
+}
+
+#nectarBalance{
+	  background:#800080;
+		color:#e800e8;
+}
+
+#creditsBalance{
+	background:#FFAF0D;
+} */
+
+#gray-badge {
+	border: 1px solid black;
+	padding: 1em;
+}
+#locationtracker {
+	font-size: .875rem;
+	color: #999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 180px;
+}
+#howto {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#howto a {
+	text-decoration: none;
+}
+span.highlight-yellow {
+	background: #FFDD09;
+}
+.sub_button {
+	background-color: gainsboro;
+}
+#inventorybutton {
+	background-color: gainsboro;
+}
+#graybutton:focus {
+	background-color: white;
+}
+.button, a.button {
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+	border: none;
+	color: #333;
+	padding: 1em;
+	text-align: center;
+	text-decoration: none;
+	flex-basis: space-around;
+	cursor: pointer;
+}
+a.button:hover {
+	text-decoration: none;
+	color: #333;
+}
+.largebutton_container {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 75px;
+}
+.largeactive {
+	background-color: rgb(255, 234, 71);
+}
+.largebutton, a.largebutton {
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+	border: none;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	background-color: #FFDD09;
+	/* background:blue; */
+	padding-top: 1.5em;
+	flex-grow: 1;
+	/* padding: 1.25em; */
+}
+a.largebutton:hover {
+	background-color: rgb(255, 234, 71);
+	text-decoration: none;
+	color: black;
+}
+#top_menu {
+	/* display: flex;
+font-size: 14px;
+align-items: center;
+padding-bottom: 3px;
+background: #09A3FF;
+text-transform: uppercase; */
+	display: flex;
+	align-items: center;
+	background: #efefef;
+	text-transform: uppercase;
+}
+#adventure_status {
+	padding-top: 25px;
+	justify-content: center;
+	text-align: center;
+	width: 50%;
+	height: 5em;
+}
+.player_car {
+	z-index: 9;
+	width: 10px;
+	height: 10px;
+	background-image: url('images/tiny_car_icon.gif');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+}
+.otherplayer_car {
+	z-index: 10;
+	width: 10px;
+	height: 10px;
+	background-image: url('images/tiny_car_icon_otherplayers.gif');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 10px
+}
+.move_icon {
+	animation: bounceInAnim 1s ease 0s infinite normal forwards;
+	z-index: 12;
+	width: 16px;
+	height: 16px;
+	background-image: url('images/move_icon.gif');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 10px;
+	left: 11px;
+}
+@keyframes pulse-anim {
+	0% {
+		/* opacity: 0;  */
+		background-color: #222;
+	}
+	50% {
+		background-color: #4285f4;
+	}
+	100 {
+		background-color: #222;
+		/* opacity: 1; */
+	}
+}
+@keyframes bounceInAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-75px);
+	}
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-19px);
+	}
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-2.4px);
+	}
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+.mapsquare {
+	width: 32px;
+	height: 32px;
+	background: #139F2E;
+	color: white;
+	background-image: url('https://i.ibb.co/RDYByS5/grassb2x.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-align: center;
+	/* font-size:.5em; */
+	color: transparent;
+	position: relative;
+	display: inline-block;
+	-webkit-user-select: none;
+}
+.currentplayer_dot {
+	background-image: url('images/blueflag.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.text {
+	visibility: hidden;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.mapsquare_zoom {
+	width: 128px;
+	height: 128px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	-webkit-user-select: none;
+}
+.randomspan {
+	/* align-content: center;
+	justify-con5tent: center; */
+	padding: .25em;
+	display: flex;
+	flex-wrap: wrap;
+}
+.locationspan {
+	text-align: center;
+	/* align-content: center;
+	justify-content: center;  */
+}
+.rarityspan {
+	/* align-content: center;
+	justify-content: center; */
+	padding: .25em;
+	display: flex;
+	flex-wrap: wrap;
+	background: rgb(109, 231, 60);
+	color: #197A3E;
+}
+.requirementspan {
+	/* align-content: center;
+	justify-content: center; */
+	padding: .25em;
+	display: flex;
+	flex-wrap: wrap;
+	background: #E9E9E9;
+	border-bottom: 0px;
+}
+.diff_easy_span {
+	/* align-content: center;
+	justify-content: center; */
+	padding: .25em;
+	display: flex;
+	flex-wrap: wrap;
+	background: #24b1dd;
+	color: white;
+}
+.diff_med_span {
+	/* align-content: center;
+	justify-content: center; */
+	padding: .25em;
+	display: flex;
+	flex-wrap: wrap;
+	background: rgb(255, 140, 9);
+	color: white;
+}
+.diff_hard_span {
+	/* align-content: center;
+	justify-content: center; */
+	padding: .25em;
+	display: flex;
+	flex-wrap: wrap;
+	background: red;
+	color: white;
+}
+.tooltip {
+	position: relative;
+	display: inline-block;
+	-webkit-user-select: none;
+}
+.tooltip .tooltiptext {
+	color: #45283C;
+	visibility: hidden;
+	position: absolute;
+	width: 100px;
+	background: white;
+	text-align: center;
+	padding: 5px;
+	border: 2px solid gainsboro;
+	border-radius: 15px;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity .6s;
+	font-size: 12px;
+}
+.tooltip-top {
+	bottom: 90%;
+	margin-left: -60px;
+}
+.tooltip-bottom {
+	top: 100%;
+	margin-left: -60px;
+}
+.tooltip-left {
+	top: -15px;
+	right: -120px;
+}
+.tooltip-right {
+	top: -5px;
+	left: 125%;
+}
+.footer {
+	flex: 0;
+	font-size: .75em;
+	padding-top: 2.5em;
+	padding-bottom: 2em;
+	text-align: center;
+}
+/* MEDIA SCREENS BELOW----------------------------------- */
+
+@media only screen and (max-width: 960px) {
+	.flex_container {
+		margin-top: 7vh;
+		display: flex;
+		/* flex-direction: column; */
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+	/* .flex_container {
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ margin-top:1%;
+ margin-left:12%;
+ margin-right:12%;
+} */
+	.viewer_box {
+		width: 75%;
+		border-bottom: 1px solid gainsboro;
+	}
+	.inventory-menu-container {
+		width: 100%;
+	}
+}
+/* MEDIA SCREENS ABOVE------------------------------------- */
+
+.buttonfield {
+	margin: 1em;
+	/* background:blue; */
+}
+.row_infospan {
+	cursor: default;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: gray;
+	padding: 5px;
+	background: white;
+}
+.blue_white {
+	color: white;
+	background: #1E87F0;
+}
+.orange_white {
+	color: black;
+	background: #FFDD09;
+}
+.gray_white {
+	color: gray;
+	background: gainsboro;
+}
+.purple_white {
+	background: rgb(184, 6, 184);
+	color: white;
+}
+.darkgray_white {
+	background: #1B1B1B;
+	color: white;
+}
+.green_on_green {
+	color: black;
+	background: rgb(109, 231, 60);
+}
+.row_button {
+	display: flex;
+	justify-content: space-around;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: gray;
+	padding: 5px;
+	border: 1px solid gainsboro;
+	background: white;
+	margin: 3px;
+}
+.row_button:hover, a.row_button:hover {
+	background-color: rgb(255, 234, 71);
+	border-color: rgb(255, 234, 71);
+	text-decoration: none;
+	color: black;
+}
+.row_button_orange {
+	display: flex;
+	justify-content: space-around;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: white;
+	background: orange;
+	padding: 5px;
+	border: 1px solid orange;
+	margin: 3px;
+}
+.row_button_red {
+	display: flex;
+	justify-content: space-around;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: white;
+	padding: 5px;
+	border: 1px solid red;
+	background: red;
+	margin: 3px;
+}
+.row_button_orange:hover {
+	border: 1px solid white;
+	background: white;
+	color: orange;
+}
+.add_to_team {
+	color: #0F7AE5;
+	padding: 2em;
+	border: none;
+}
+.row_detail {
+	font-size: 11px;
+	text-transform: uppercase;
+	color: gray;
+	background: tan;
+	padding: 2px;
+	border: 1px solid gainsboro;
+}
+.town_shop_button {
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: white;
+	padding: 12px;
+	border: 1px solid green;
+	background: #44b359;
+}
+.town_shop_button:hover {
+	background: #14a02e;
+	border: 1px solid #14a02e;
+	text-decoration: none;
+	color: white;
+}
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.progressBarBackground {
+	margin-top: .25em;
+	width: 250px;
+	background: #DCDCDC;
+}
+.progressBarForeground {
+	/* width: 10%; */
+	/* height: 30px; */
+	/* background-color: #04AA6D; */
+	/* background-color:#0043FF; */
+	background-color: #139F2E;
+	text-align: center;
+	color: white;
+}
+.add_to_team {
+	padding: 2em;
+	color: gray;
+	border: 1px solid gainsboro;
+}

@@ -1,0 +1,152 @@
+/* Navbar */
+.navbar {
+background-color: #fffd3a;
+}
+
+.navbar-brand img {
+border-radius: 50%;
+}
+
+/* Inventory */
+#inventory {
+background-color: #e1e1e1;
+padding: 20px;
+border-radius: 10px;
+}
+
+#inventory h2 {
+margin-bottom: 20px;
+}
+
+#inventory .card {
+  border-radius: 10px;
+  background-color: #e1e1e1;
+  padding: 20px;
+}
+
+#inventory .card-img-top {
+border-radius: 50%;
+}
+
+#inventory .card-title {
+font-size: 18px;
+color: #353535;
+}
+
+#inventory .card-text {
+font-size: 14px;
+color: #353535;
+}
+
+#inventory .card:hover {
+transform: scale(1.1);
+background-color: #fffd3a;
+color: #353535;
+}
+
+/* Map */
+#map {
+background-color: #e1e1e1;
+padding: 20px;
+border-radius: 10px;
+text-align: center;
+}
+
+#map h2 {
+margin-bottom: 20px;
+}
+
+#map img {
+border-radius: 10px;
+}
+
+#map-navigation {
+margin-top: 20px;
+}
+
+#map-navigation button {
+margin: 0 10px;
+}
+
+/* Wallet */
+#wallet {
+background-color: #e1e1e1;
+padding: 20px;
+border-radius: 10px;
+}
+
+#wallet .list-group-item {
+border: none;
+}
+
+#wallet .list-group-item:nth-child(even) {
+background-color: #fffd3a;
+}
+
+#wallet .list-group-item .badge {
+font-weight: bold;
+}
+
+#wallet .list-group-item .badge-pill.badge-primary {
+background-color: #353535;
+}
+
+#wallet .list-group-item .badge-pill.badge-warning {
+background-color: #353535;
+}
+
+#wallet .list-group-item .badge-pill.badge-success {
+background-color: #353535;
+}
+
+#wallet .list-group-item .badge-pill.badge-danger {
+background-color: #353535;
+}
+
+#wallet .list-group-item .badge-pill.badge-info {
+background-color: #353535;
+}
+
+#wallet .list-group-item .badge-pill.badge-secondary {
+background-color: #353535;
+}
+
+/* Flexbox */
+.container-fluid {
+display: flex;
+flex-wrap: wrap;
+}
+
+.row {
+display: flex;
+flex-wrap: wrap;
+}
+
+.col-12 {
+flex: 1;
+}
+
+.col-md-4 {
+flex: 1;
+}
+
+.col-md-8 {
+flex: 2;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+.col-md-4 {
+flex: 2;
+}
+
+.col-md-8 {
+flex: 1;
+}
+}
+
+@media (max-width: 767px) {
+.navbar-nav {
+flex-wrap: wrap;
+}
+}

@@ -1,0 +1,277 @@
+.map {
+
+	cursor: url('../images/ui/cursor.png'), url('images/ui/cursor.png'), url('images/ui/cursor.png'), auto;
+    width: 512px;
+    height: 512px;
+    background-color: #222;
+    animation-name: pulse-anim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mapsquare {
+    width: 32px;
+    height: 32px;
+    background: #139F2E;
+    color: white;
+    background-image: url(../images/fixes/map/grass.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: transparent;
+    display: inline-block;
+}
+
+.tile-glow:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  filter: brightness(1.2);
+}
+
+#tooltip {
+		background: #333;
+		color: white;
+		font-weight: bold;
+		padding: 4px 8px;
+		font-size: 13px;
+		border-radius: 4px;
+	}
+.worldsquare {
+	width: 256px;
+	height: 256px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	font-size: 16px;
+	color: #0F9;
+	-webkit-transition: color 2s, font-size 2s;
+	-moz-transition: color 2s, font-size 2s;
+	-o-transition: color 2s, font-size 2s;
+	transition: color 2s, font-size 2s;
+	-webkit-user-select: none;
+}
+.world_off {
+	background-image: url('../images/ui/map-viewer/World_Icon_Off.png');
+}
+.world_on {
+	font-size: 24px;
+	color: #fc0;
+	background-image: url('../images/ui/map-viewer/World_Icon_On.png');
+}
+
+.zonesquare {
+	position: relative;
+	width: 128px;
+	height: 128px;
+	background: black;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	text-align: center;
+	background-image: url('../images/ui/map-viewer/Locked_Zone_Off.png');
+	background-repeat: repeat;
+	-webkit-transition: font-size 6s;
+	-moz-transition: font-size 6s;
+	-o-transition: font-size 6s;
+	transition: font-size 6s;
+	-webkit-user-select: none;
+}
+.zonesquare:hover {
+	background-image: url('../images/ui/map-viewer/Locked_Zone_On.png');
+	font-size: 16px;
+}
+.z_on {
+	font-weight: bold;
+}
+/* Different zone types when they have been unlocked, change color bg images */
+.uw_1 {
+	background-image: url('../images/ui/map-viewer/World1_UnlockedTile.png');
+}
+.uw_2 {
+	background-image: url('../images/ui/map-viewer/World2_UnlockedTile.png');
+}
+.uw_3 {
+	background-image: url('../images/ui/map-viewer/World3_UnlockedTile.png');
+}
+.uw_4 {
+	background-image: url('../images/ui/map-viewer/World4_UnlockedTile.png');
+}
+
+
+.castle {
+	background: purple;
+	background-image: url('../images/fixes/map/castle.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.water {
+	background: #24b1dd;
+	background-image: url('../images/fixes/map/water.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.forest {
+	background: #24523a;
+	background-image: url('../images/fixes/map/forest.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.crushieforest {
+	background: #24523a;
+	background-image: url('../images/fixes/map/c_forest.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.lava {
+	background: red;
+}
+.mountain {
+	background: brown;
+}
+.cyber {
+	background: silver;
+}
+.fortress {
+	background: magenta;
+}
+/* TROPIC tiles */
+
+.tr_water {
+	background-image: url('../images/tropic_world/tr_water.png');
+	background-repeat: no-repeat;
+}
+.tr_castle {
+	background-image: url('../images/tropic_world/tr_castle.png');
+	background-repeat: no-repeat;
+}
+.tr_island {
+	background-image: url('../images/tropic_world/tr_island.png');
+	background-repeat: no-repeat;
+}
+.tr_waterland {
+	background-image: url('../images/tropic_world/tr_waterland.png');
+	background-repeat: no-repeat;
+}
+
+/* DESERT tiles */
+.ds_dirt {
+	background-image: url('../images/desert_world/ds_dirt.png');
+	background-repeat: no-repeat;
+}
+.ds_castle {
+	background-image: url('../images/desert_world/ds_castle.png');
+	background-repeat: no-repeat;
+}
+.ds_dunes {
+	background-image: url('../images/desert_world/ds_dunes.png');
+	background-repeat: no-repeat;
+}
+.ds_ruins {
+	background-image: url('../images/desert_world/ds_ruins.png');
+	background-repeat: no-repeat;
+}
+.ds_town {
+	background-image: url('../images/desert_world/ds_town.png');
+	background-repeat: no-repeat;
+}
+/* SPACE tiles */
+
+.sp_normal {
+	background-image: url('../images/space_world/sp_normalB.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.sp_gas1 {
+	background-image: url('../images/space_world/sp_gas1.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.sp_debris {
+	background-image: url('../images/space_world/sp_debris.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.sp_station1 {
+	background-image: url('../images/space_world/sp_station1.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.sp_gplanet1 {
+	background-image: url('../images/space_world/sp_gplanet1.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.sp_dplanet1 {
+	background-image: url('../images/space_world/sp_dplanet1.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.sp_iplanet1 {
+	background-image: url('../images/space_world/sp_iplanet1.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.sp_rplanet1 {
+	background-image: url('../images/space_world/sp_rplanet1.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.grassplains {
+	background: #24523a;
+	background-image: url('../images/fixes/map/grass.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.town {
+	background: #24523a;
+	background-image: url('../images/fixes/map/town.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.ruins {
+	background: #24523a;
+	background-image: url('../images/fixes/map/ruins.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.swamp {
+	background: beige;
+}
+.farm {
+	background: green;
+}
+
+/* MAP RELATED CSS */
+#map-unlock-area-name {
+	color: blue;
+	background: rgb(193, 220, 255);
+	padding: 1.25em;
+  display:flex;
+}
+#map-unlock-gxp-contributed {
+	background: #6DE73C;
+	padding: 1.25em;
+  display:flex;
+}
+#map-unlock-gxp-required {
+  font-weight: bold;
+  background: rgb(18, 135, 0);
+  padding: 0.3em;
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+#map-unlock-gxp-balance {
+	background: gainsboro;
+	padding: 1.25em;
+  display:flex;
+  margin-bottom:1em;
+}
