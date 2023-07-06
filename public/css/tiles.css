@@ -1,0 +1,138 @@
+.castle {
+	background: purple;
+	background-image: url('../images/fixes/map/castle.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.water {
+	background: #24b1dd;
+	background-image: url('../images/fixes/map/water.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.forest {
+	background: #24523a;
+	background-image: url('../images/fixes/map/forest.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.crushieforest {
+	background: #24523a;
+	background-image: url('../images/fixes/map/c_forest.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.lava {
+	background: red;
+}
+.mountain {
+	background: brown;
+}
+.cyber {
+	background: silver;
+}
+.fortress {
+	background: magenta;
+}
+/* TROPIC tiles */
+
+.tr_water {
+	background-image: url('../images/tropic_world/tr_water.png');
+	background-repeat: no-repeat;
+}
+.tr_castle {
+	background-image: url('../images/tropic_world/tr_castle.png');
+	background-repeat: no-repeat;
+}
+.tr_island {
+	background-image: url('../images/tropic_world/tr_island.png');
+	background-repeat: no-repeat;
+}
+/* DESERT tiles */
+
+.ds_dirt {
+	background-image: url('../images/desert_world/ds_dirt.png');
+	background-repeat: no-repeat;
+}
+.ds_castle {
+	background-image: url('../images/desert_world/ds_castle.png');
+	background-repeat: no-repeat;
+}
+.ds_dunes {
+	background-image: url('../images/desert_world/ds_dunes.png');
+	background-repeat: no-repeat;
+}
+.ds_ruins {
+	background-image: url('../images/desert_world/ds_ruins.png');
+	background-repeat: no-repeat;
+}
+.ds_town {
+	background-image: url('../images/desert_world/ds_town.png');
+	background-repeat: no-repeat;
+}
+/* SPACE tiles */
+
+.sp_normal {
+	background-image: url('../images/space_world/sp_normalB.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.sp_gas1 {
+	background-image: url('../images/space_world/sp_gas1.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.sp_debris {
+	background-image: url('../images/space_world/sp_debris.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.sp_station1 {
+	background-image: url('../images/space_world/sp_station1.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.sp_gplanet1 {
+	background-image: url('../images/space_world/sp_gplanet1.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.sp_dplanet1 {
+	background-image: url('../images/space_world/sp_dplanet1.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.sp_iplanet1 {
+	background-image: url('../images/space_world/sp_iplanet1.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.sp_rplanet1 {
+	background-image: url('../images/space_world/sp_rplanet1.png');
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.grassplains {
+	background: #24523a;
+	background-image: url('../images/fixes/map/grass.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.town {
+	background: #24523a;
+	background-image: url('../images/fixes/map/town.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.ruins {
+	background: #24523a;
+	background-image: url('../images/fixes/map/ruins.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.swamp {
+	background: beige;
+}
+.farm {
+	background: green;
+}
